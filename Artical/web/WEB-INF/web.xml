@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>GetArticalController</servlet-name>
+        <servlet-class>controller.GetArticalController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateArticleController</servlet-name>
+        <servlet-class>controller.CreateArticleController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetArticalController</servlet-name>
+        <url-pattern>/get-articles</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateArticleController</servlet-name>
+        <url-pattern>/create-article</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
